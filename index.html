@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+		<link rel="stylesheet" href="./static/bootstrap.css" >
+	</head>
+	<body class="d-flex flex-column justify-content-center min-vh-100">
+		<!-- Search Bar  -->
+		<div class="p-2 d-flex flex-row justify-content-center">
+			<form method="get" class="d-flex justify-content-center" action="https://duckduckgo.com/">
+				<input type="text" id="searchbar" autocomplete="off" name="q" placeholder="" aria-label="Search  on DuckDuckGo"/>
+			</form>
+		</div>
+		<!-- Widgets -->
+		<div class="p-2 d-flex flex-row justify-content-center">
+			<div class="p-2 d-flex justify-content-center">
+				<div class="p-4 d-column widgetcontainer">
+					<center><h2 class="nowrap">Cal Poly</h2></center>
+					<center><a href="http://myportal.calpoly.edu">Portal</a></center>
+					<center><a href="https://canvas.calpoly.edu/">Canvas</a></center>
+					<center><a href="https://outlook.office365.com/mail/">Outlook</a></center>
+					<center><a href="https://cmsweb.pscs.calpoly.edu/psp/CSLOPRD/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.SSS_STUDENT_CENTER.GBL?FolderPath=PORTAL_ROOT_OBJECT.CO_EMPLOYEE_SELF_SERVICE.HC_SSS_STUDENT_CENTER&IsFolder=false&IgnoreParamTempl=FolderPath,IsFolder&RL=&target=main0&navc=2398?cmd=login&languageCd=ENG&userid=PS&pwd=z">Student Center</a></center>
+					<center><a href="https://cpslo-my.sharepoint.com/personal/ctferrer_calpoly_edu/">OneDrive</a></center>
+					<center><a href="https://cpslo-my.sharepoint.com/personal/ctferrer_calpoly_edu/_layouts/15/onedrive.aspx?id=%2Fsites%2Fits%2Dipso%2Dstudent%2FShared%20Documents&listurl=https%3A%2F%2Fcpslo%2Esharepoint%2Ecom%2Fsites%2Fits%2Dipso%2Dstudent%2FShared%20Documents">SA OneDrive</a></center>
+				</div>
+			</div>
+			<div class="p-2 d-flex justify-content-center">
+				<div class="p-4 d-column widgetcontainer">
+					<center><h2 class="nowrap">~</h2></center>
+					<center><a href="http://www.github.com/clementef">Github</a></center>
+					<center><a href="http://brew.sh">Brew</a></center>
+					<center><a href="https://www.pico-8-edu.com/">PICO-8</a></center>
+					<center><a href="https://wiki.archlinux.org/">ArchWiki</a></center>
+					<center><a href="https://vimm.net/">Vimm's LaXir</a></center>
+					<center><a href="http://localhost">Localhost</a></center>
+				</div>
+			</div>
+			<div class="p-2 d-flex justify-content-center">
+				<div class="p-4 d-column widgetcontainer">
+					<center><h2 class="nowrap">Links</h2></center>
+					<center><a href="http://www.wikipedia.org">Wikipedia</a></center>
+					<center><a href="https://www.wolframalpha.com/">WolframAlpha</a></center>
+					<center><a href="http://www.discord.com">Discord</a></center>
+					<center><a href="http://www.ebay.com">Ebay</a></center>
+					<center><a href="http://www.amazon.com">Amazon</a></center>
+					<center><a href="https://nyt.com/games/wordle/index.html">Wordle</a></center>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<style>
+html {
+}
+:root {
+	--bg: #282a36;
+	--bg2: #383b4c;
+	--outline: #bd93f9;
+	--link: #747999;
+	--title: #99a2bf;
+	--white: #f8f8f2;
+}
+body {
+	background-color: var(--bg);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15pt;
+	color: var(--title);
+}
+a {
+	text-decoration: none;
+	/*border-bottom: 1px solid var(--white);*/
+	color: var(--link);
+	white-space: nowrap;
+}
+a:hover {
+	text-decoration: none;
+	border-bottom: 1px solid var(--link);
+	color: var(--title);
+}
+#searchbar{
+	/*border-radius: 10px;*/
+	border: 1px;
+	background-color: var(--bg);
+	color: var(--title);
+}
+input[type=text] {
+	width: 90%;
+	outline: 2px solid var(--outline);
+	-webkit-transition: width 0.1s ease-in-out;
+	transition: width 0.1s ease-in-out;
+}
+input[type=text]:focus {
+	width: 100%;
+	outline: 3px solid var(--outline);
+}
+.widgetcontainer {
+	background-color: var(--bg);
+	outline: 2px solid var(--outline);
+}
+.nowrap {
+	white-space: nowrap;
+}
+</style>
